@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE4E4"
+    tools:context=".consultas">
+
+    <TextView
+        android:id="@+id/tvconsultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="serif"
+        android:text="Consultar Información"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnpersonajoven"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Persona más joven"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvconsultas"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowHeight="5dp" />
+
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnmayoredad"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Persona con mayor edad"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpersonajoven"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowHeight="5dp" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnsalariobajo"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Salario Bajo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmayoredad"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowHeight="5dp" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btncargo"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Cargos"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPromedio"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowHeight="5dp" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnatrás"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Atrás"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncargo" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnsalarioalto"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Salario alto"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsalariobajo" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnPromedio"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif"
+        android:text="Promedio de salarios"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsalarioalto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
